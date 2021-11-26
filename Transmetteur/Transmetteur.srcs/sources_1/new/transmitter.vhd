@@ -95,7 +95,6 @@ process (CLK, RESET, SEND, byte_to_send, DATA_IN, ETAT_UART) begin
             when Byte1 =>
                 RESET_rdc <= '0';
                 LOAD_rdc <= DATA_IN(7 downto 0);
-                byte_to_send <= byte_to_send;
                 START <= '1';
                 if (ETAT_UART = Fin) then
                     byte_to_send <= Byte2;
@@ -106,7 +105,6 @@ process (CLK, RESET, SEND, byte_to_send, DATA_IN, ETAT_UART) begin
             when Byte2 =>
                 RESET_rdc <= '0';
                 LOAD_rdc <= DATA_IN(15 downto 8);
-                byte_to_send <= byte_to_send;
                 START <= '1';
                 if (ETAT_UART = Fin) then
                     byte_to_send <= Byte3;
@@ -117,7 +115,6 @@ process (CLK, RESET, SEND, byte_to_send, DATA_IN, ETAT_UART) begin
             when Byte3 =>
                 RESET_rdc <= '0';
                 LOAD_rdc <= DATA_IN(23 downto 16);
-                byte_to_send <= byte_to_send;
                 START <= '1';
                 if (ETAT_UART = Fin) then
                     byte_to_send <= Byte4;
@@ -128,7 +125,6 @@ process (CLK, RESET, SEND, byte_to_send, DATA_IN, ETAT_UART) begin
             when Byte4 =>
                 RESET_rdc <= '0';
                 LOAD_rdc <= "0" & DATA_IN(30 downto 24);
-                byte_to_send <= byte_to_send;
                 START <= '1';
                 if (ETAT_UART = Fin) then
                     byte_to_send <= Attente;

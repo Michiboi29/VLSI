@@ -677,3 +677,4 @@ run 100 ns
 run 100 ns
 run 100 ns
 run 100 ns
+close_sim

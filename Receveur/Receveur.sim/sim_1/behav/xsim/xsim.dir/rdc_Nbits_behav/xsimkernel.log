@@ -1,0 +1,7 @@
+Running: xsim.dir/rdc_Nbits_behav/xsimk.exe -simmode gui -wdb rdc_Nbits_behav.wdb -simrunnum 0 -socket 56835
+Design successfully loaded
+Design Loading Memory Usage: 5804 KB (Peak: 5804 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 6344 KB (Peak: 6344 KB)
+Simulation CPU Usage: 124 ms
