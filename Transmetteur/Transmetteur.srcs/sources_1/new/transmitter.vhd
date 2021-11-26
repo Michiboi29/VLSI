@@ -56,7 +56,7 @@ signal EN_compt             : STD_LOGIC;
 signal OUTPUT_compt         : STD_LOGIC_VECTOR(15 downto 0);
 signal OUTPUT_compt_nb_bits : STD_LOGIC_VECTOR(15 downto 0);
 -- Constantes pour nombre de coups d'horloge
-constant CLK_PER_BIT : integer := 5;--1085;     -- 125MHz / 115200 = 1085
+constant CLK_PER_BIT : integer := 1085;     -- 125MHz / 115200 = 1085
 constant FULL_COMPT  : integer := 65535;
 -- Signaux compareteurs 16 bits
 signal A_cmp_end_bit  : STD_LOGIC_VECTOR(15 downto 0) :=  STD_LOGIC_VECTOR(to_unsigned(FULL_COMPT - CLK_PER_BIT + 1, 16));
