@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Transmetteur.srcs/sources_1/new/Adder.vhd" \
+"../../../../Transmetteur.srcs/sources_1/new/Adder_8bits.vhd" \
+"../../../../Transmetteur.srcs/sources_1/new/cmp_16bits.vhd" \
+"../../../../Transmetteur.srcs/sources_1/new/compt_sync.vhd" \
+"../../../../Transmetteur.srcs/sources_1/new/rdc_load_Nbits.vhd" \
+"../../../../Transmetteur.srcs/sources_1/new/reg_1bit.vhd" \
+"../../../../Transmetteur.srcs/sources_1/new/transmitter.vhd" \
+
+# Do not sort compile order
+nosort
