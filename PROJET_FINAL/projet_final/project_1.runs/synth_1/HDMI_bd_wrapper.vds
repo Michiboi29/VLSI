@@ -1,53 +1,57 @@
 #-----------------------------------------------------------
-# Vivado v2018.2.1 (64-bit)
-# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
-# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Mon Nov  1 03:26:02 2021
-# Process ID: 7204
-# Current directory: U:/VLSI/LABO3/numero8/project_1.runs/synth_1
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov 29 14:14:57 2021
+# Process ID: 13420
+# Current directory: D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.runs/synth_1
 # Command line: vivado.exe -log HDMI_bd_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDMI_bd_wrapper.tcl
-# Log file: U:/VLSI/LABO3/numero8/project_1.runs/synth_1/HDMI_bd_wrapper.vds
-# Journal file: U:/VLSI/LABO3/numero8/project_1.runs/synth_1\vivado.jou
+# Log file: D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.runs/synth_1/HDMI_bd_wrapper.vds
+# Journal file: D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source HDMI_bd_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'u:/VLSI/LABO3/repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Programs/Xilinx/Vivado/2018.2/data/ip'.
-add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 286.836 ; gain = 46.777
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Documents/Vivado/VLSI/PROJET_FINAL/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
 Command: synth_design -top HDMI_bd_wrapper -part xc7z020clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8132 
+INFO: Helper process launched with PID 8592 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 391.570 ; gain = 96.102
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 499.434 ; gain = 93.562
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'HDMI_bd_wrapper' [U:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/hdl/HDMI_bd_wrapper.vhd:35]
-INFO: [Synth 8-3491] module 'HDMI_bd' declared at 'U:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd:14' bound to instance 'HDMI_bd_i' of component 'HDMI_bd' [U:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/hdl/HDMI_bd_wrapper.vhd:75]
-INFO: [Synth 8-638] synthesizing module 'HDMI_bd' [U:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd:43]
-INFO: [Synth 8-3491] module 'HDMI_bd_RTL_0_0' declared at 'U:/VLSI/LABO3/numero8/project_1.runs/synth_1/.Xil/Vivado-7204-pcetu-126/realtime/HDMI_bd_RTL_0_0_stub.vhdl:5' bound to instance 'RTL_0' of component 'HDMI_bd_RTL_0_0' [U:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd:171]
-INFO: [Synth 8-638] synthesizing module 'HDMI_bd_RTL_0_0' [U:/VLSI/LABO3/numero8/project_1.runs/synth_1/.Xil/Vivado-7204-pcetu-126/realtime/HDMI_bd_RTL_0_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'HDMI_bd_clk_wiz_0_0' declared at 'U:/VLSI/LABO3/numero8/project_1.runs/synth_1/.Xil/Vivado-7204-pcetu-126/realtime/HDMI_bd_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'HDMI_bd_clk_wiz_0_0' [U:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd:178]
-INFO: [Synth 8-638] synthesizing module 'HDMI_bd_clk_wiz_0_0' [U:/VLSI/LABO3/numero8/project_1.runs/synth_1/.Xil/Vivado-7204-pcetu-126/realtime/HDMI_bd_clk_wiz_0_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'HDMI_bd_dvi2rgb_0_0' declared at 'U:/VLSI/LABO3/numero8/project_1.runs/synth_1/.Xil/Vivado-7204-pcetu-126/realtime/HDMI_bd_dvi2rgb_0_0_stub.vhdl:5' bound to instance 'dvi2rgb_0' of component 'HDMI_bd_dvi2rgb_0_0' [U:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd:185]
-INFO: [Synth 8-638] synthesizing module 'HDMI_bd_dvi2rgb_0_0' [U:/VLSI/LABO3/numero8/project_1.runs/synth_1/.Xil/Vivado-7204-pcetu-126/realtime/HDMI_bd_dvi2rgb_0_0_stub.vhdl:30]
-INFO: [Synth 8-3491] module 'HDMI_bd_rgb2dvi_0_0' declared at 'U:/VLSI/LABO3/numero8/project_1.runs/synth_1/.Xil/Vivado-7204-pcetu-126/realtime/HDMI_bd_rgb2dvi_0_0_stub.vhdl:5' bound to instance 'rgb2dvi_0' of component 'HDMI_bd_rgb2dvi_0_0' [U:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd:207]
-INFO: [Synth 8-638] synthesizing module 'HDMI_bd_rgb2dvi_0_0' [U:/VLSI/LABO3/numero8/project_1.runs/synth_1/.Xil/Vivado-7204-pcetu-126/realtime/HDMI_bd_rgb2dvi_0_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'HDMI_bd_xlconstant_0_0' declared at 'U:/VLSI/LABO3/numero8/project_1.runs/synth_1/.Xil/Vivado-7204-pcetu-126/realtime/HDMI_bd_xlconstant_0_0_stub.vhdl:5' bound to instance 'xlconstant_0' of component 'HDMI_bd_xlconstant_0_0' [U:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd:220]
-INFO: [Synth 8-638] synthesizing module 'HDMI_bd_xlconstant_0_0' [U:/VLSI/LABO3/numero8/project_1.runs/synth_1/.Xil/Vivado-7204-pcetu-126/realtime/HDMI_bd_xlconstant_0_0_stub.vhdl:12]
-INFO: [Synth 8-256] done synthesizing module 'HDMI_bd' (1#1) [U:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd:43]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Programs/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:22660' bound to instance 'hdmi_in_ddc_scl_iobuf' of component 'IOBUF' [U:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/hdl/HDMI_bd_wrapper.vhd:98]
-INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Programs/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:22660]
+INFO: [Synth 8-638] synthesizing module 'HDMI_bd_wrapper' [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/hdl/HDMI_bd_wrapper.vhd:35]
+INFO: [Synth 8-3491] module 'HDMI_bd' declared at 'D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd:14' bound to instance 'HDMI_bd_i' of component 'HDMI_bd' [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/hdl/HDMI_bd_wrapper.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'HDMI_bd' [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd:43]
+INFO: [Synth 8-3491] module 'HDMI_bd_RTL_0_0' declared at 'D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.runs/synth_1/.Xil/Vivado-13420-LAPTOP-MIC/realtime/HDMI_bd_RTL_0_0_stub.vhdl:5' bound to instance 'RTL_0' of component 'HDMI_bd_RTL_0_0' [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'HDMI_bd_RTL_0_0' [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.runs/synth_1/.Xil/Vivado-13420-LAPTOP-MIC/realtime/HDMI_bd_RTL_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'HDMI_bd_clk_wiz_0_0' declared at 'D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.runs/synth_1/.Xil/Vivado-13420-LAPTOP-MIC/realtime/HDMI_bd_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'HDMI_bd_clk_wiz_0_0' [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'HDMI_bd_clk_wiz_0_0' [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.runs/synth_1/.Xil/Vivado-13420-LAPTOP-MIC/realtime/HDMI_bd_clk_wiz_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'HDMI_bd_dvi2rgb_0_0' declared at 'D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.runs/synth_1/.Xil/Vivado-13420-LAPTOP-MIC/realtime/HDMI_bd_dvi2rgb_0_0_stub.vhdl:5' bound to instance 'dvi2rgb_0' of component 'HDMI_bd_dvi2rgb_0_0' [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'HDMI_bd_dvi2rgb_0_0' [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.runs/synth_1/.Xil/Vivado-13420-LAPTOP-MIC/realtime/HDMI_bd_dvi2rgb_0_0_stub.vhdl:30]
+INFO: [Synth 8-3491] module 'HDMI_bd_rgb2dvi_0_0' declared at 'D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.runs/synth_1/.Xil/Vivado-13420-LAPTOP-MIC/realtime/HDMI_bd_rgb2dvi_0_0_stub.vhdl:5' bound to instance 'rgb2dvi_0' of component 'HDMI_bd_rgb2dvi_0_0' [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd:213]
+INFO: [Synth 8-638] synthesizing module 'HDMI_bd_rgb2dvi_0_0' [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.runs/synth_1/.Xil/Vivado-13420-LAPTOP-MIC/realtime/HDMI_bd_rgb2dvi_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'HDMI_bd_xlconstant_0_0' declared at 'd:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_xlconstant_0_0/synth/HDMI_bd_xlconstant_0_0.v:57' bound to instance 'xlconstant_0' of component 'HDMI_bd_xlconstant_0_0' [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd:226]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_bd_xlconstant_0_0' [d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_xlconstant_0_0/synth/HDMI_bd_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_5_xlconstant' [d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_5_xlconstant' (1#1) [d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_bd_xlconstant_0_0' (2#1) [d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_xlconstant_0_0/synth/HDMI_bd_xlconstant_0_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'HDMI_bd' (3#1) [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd:43]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'hdmi_in_ddc_scl_iobuf' of component 'IOBUF' [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/hdl/HDMI_bd_wrapper.vhd:98]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (2#1) [C:/Programs/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:22660]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Programs/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:22660' bound to instance 'hdmi_in_ddc_sda_iobuf' of component 'IOBUF' [U:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/hdl/HDMI_bd_wrapper.vhd:105]
-INFO: [Synth 8-256] done synthesizing module 'HDMI_bd_wrapper' (3#1) [U:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/hdl/HDMI_bd_wrapper.vhd:35]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (4#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'hdmi_in_ddc_sda_iobuf' of component 'IOBUF' [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/hdl/HDMI_bd_wrapper.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'HDMI_bd_wrapper' (5#1) [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/hdl/HDMI_bd_wrapper.vhd:35]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 447.562 ; gain = 152.094
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 556.250 ; gain = 150.379
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -60,10 +64,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 447.562 ; gain = 152.094
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 556.250 ; gain = 150.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 447.562 ; gain = 152.094
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 556.250 ; gain = 150.379
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -72,77 +76,78 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0_in_context.xdc] for cell 'HDMI_bd_i/clk_wiz_0'
-Finished Parsing XDC File [u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0_in_context.xdc] for cell 'HDMI_bd_i/clk_wiz_0'
-Parsing XDC File [u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc] for cell 'HDMI_bd_i/dvi2rgb_0'
-Finished Parsing XDC File [u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc] for cell 'HDMI_bd_i/dvi2rgb_0'
-Parsing XDC File [u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc] for cell 'HDMI_bd_i/rgb2dvi_0'
-Finished Parsing XDC File [u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc] for cell 'HDMI_bd_i/rgb2dvi_0'
-Parsing XDC File [u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_xlconstant_0_0/HDMI_bd_xlconstant_0_0/design_1_xlconstant_0_0_in_context.xdc] for cell 'HDMI_bd_i/xlconstant_0'
-Finished Parsing XDC File [u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_xlconstant_0_0/HDMI_bd_xlconstant_0_0/design_1_xlconstant_0_0_in_context.xdc] for cell 'HDMI_bd_i/xlconstant_0'
-Parsing XDC File [u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_RTL_0_0/HDMI_bd_RTL_0_0/HDMI_bd_RTL_0_0_in_context.xdc] for cell 'HDMI_bd_i/RTL_0'
-Finished Parsing XDC File [u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_RTL_0_0/HDMI_bd_RTL_0_0/HDMI_bd_RTL_0_0_in_context.xdc] for cell 'HDMI_bd_i/RTL_0'
-Parsing XDC File [U:/VLSI/LABO3/numero8/project_1.srcs/constrs_1/imports/constraints/Zybo-Z7-Master.xdc]
-WARNING: [Constraints 18-619] A clock with name 'CLK' already exists, overwriting the previous clock with the same name. [U:/VLSI/LABO3/numero8/project_1.srcs/constrs_1/imports/constraints/Zybo-Z7-Master.xdc:213]
-Finished Parsing XDC File [U:/VLSI/LABO3/numero8/project_1.srcs/constrs_1/imports/constraints/Zybo-Z7-Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [U:/VLSI/LABO3/numero8/project_1.srcs/constrs_1/imports/constraints/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/HDMI_bd_wrapper_propImpl.xdc].
+Parsing XDC File [d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0_in_context.xdc] for cell 'HDMI_bd_i/clk_wiz_0'
+Finished Parsing XDC File [d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0_in_context.xdc] for cell 'HDMI_bd_i/clk_wiz_0'
+Parsing XDC File [d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc] for cell 'HDMI_bd_i/dvi2rgb_0'
+Finished Parsing XDC File [d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc] for cell 'HDMI_bd_i/dvi2rgb_0'
+Parsing XDC File [d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc] for cell 'HDMI_bd_i/rgb2dvi_0'
+Finished Parsing XDC File [d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc] for cell 'HDMI_bd_i/rgb2dvi_0'
+Parsing XDC File [d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_RTL_0_0/HDMI_bd_RTL_0_0/HDMI_bd_RTL_0_0_in_context.xdc] for cell 'HDMI_bd_i/RTL_0'
+Finished Parsing XDC File [d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_RTL_0_0/HDMI_bd_RTL_0_0/HDMI_bd_RTL_0_0_in_context.xdc] for cell 'HDMI_bd_i/RTL_0'
+Parsing XDC File [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/constrs_1/imports/constraints/Zybo-Z7-Master.xdc]
+WARNING: [Constraints 18-619] A clock with name 'CLK' already exists, overwriting the previous clock with the same name. [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/constrs_1/imports/constraints/Zybo-Z7-Master.xdc:213]
+Finished Parsing XDC File [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/constrs_1/imports/constraints/Zybo-Z7-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/constrs_1/imports/constraints/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/HDMI_bd_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/HDMI_bd_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [U:/VLSI/LABO3/numero8/project_1.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [U:/VLSI/LABO3/numero8/project_1.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 851.625 ; gain = 0.000
 Completed Processing XDC Constraints
 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 851.625 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 743.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 851.625 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 851.625 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 743.297 ; gain = 447.828
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 851.625 ; gain = 445.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 743.297 ; gain = 447.828
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 851.625 ; gain = 445.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for CLK. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0_in_context.xdc, line 4).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 2).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 3).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 5).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 6).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 7).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 8).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 9).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 10).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 11).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 12).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 13).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 14).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 15).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 16).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 17).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_clk_n. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 1).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_clk_n. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 2).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_clk_p. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_clk_p. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 4).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[0]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 5).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[0]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 6).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[1]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 7).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[1]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 8).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[2]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 9).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[2]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 10).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[0]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 11).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[0]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 12).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[1]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 13).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[1]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 14).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[2]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 15).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[2]. (constraint file  u:/VLSI/LABO3/numero8/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_clk_n. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_clk_n. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_clk_p. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_clk_p. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[0]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[0]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[1]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[1]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[2]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[2]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[0]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[0]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[1]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[1]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[2]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[2]. (constraint file  d:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0_in_context.xdc, line 16).
 Applied set_property DONT_TOUCH = true for HDMI_bd_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for HDMI_bd_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for HDMI_bd_i/dvi2rgb_0. (constraint file  auto generated constraint, line ).
@@ -150,10 +155,10 @@ Applied set_property DONT_TOUCH = true for HDMI_bd_i/rgb2dvi_0. (constraint file
 Applied set_property DONT_TOUCH = true for HDMI_bd_i/xlconstant_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for HDMI_bd_i/RTL_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 743.297 ; gain = 447.828
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 851.625 ; gain = 445.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 743.297 ; gain = 447.828
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 851.625 ; gain = 445.754
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -189,7 +194,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 743.297 ; gain = 447.828
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 851.625 ; gain = 445.754
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -205,13 +210,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'HDMI_bd_i/dvi2rgb_0/Pixel
 WARNING: [Synth 8-565] redefining clock 'CLK'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 781.797 ; gain = 486.328
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 888.723 ; gain = 482.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 781.797 ; gain = 486.328
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 888.723 ; gain = 482.852
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -223,7 +228,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 781.871 ; gain = 486.402
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 898.383 ; gain = 492.512
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -247,7 +252,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 783.000 ; gain = 487.531
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 898.383 ; gain = 492.512
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -260,7 +265,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 783.000 ; gain = 487.531
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 898.383 ; gain = 492.512
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -272,83 +277,84 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 783.000 ; gain = 487.531
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 898.383 ; gain = 492.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 783.000 ; gain = 487.531
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 898.383 ; gain = 492.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 783.000 ; gain = 487.531
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 898.383 ; gain = 492.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 783.000 ; gain = 487.531
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 898.383 ; gain = 492.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+-----------------------+----------+
-|      |BlackBox name          |Instances |
-+------+-----------------------+----------+
-|1     |HDMI_bd_RTL_0_0        |         1|
-|2     |HDMI_bd_clk_wiz_0_0    |         1|
-|3     |HDMI_bd_dvi2rgb_0_0    |         1|
-|4     |HDMI_bd_rgb2dvi_0_0    |         1|
-|5     |HDMI_bd_xlconstant_0_0 |         1|
-+------+-----------------------+----------+
++------+--------------------+----------+
+|      |BlackBox name       |Instances |
++------+--------------------+----------+
+|1     |HDMI_bd_RTL_0_0     |         1|
+|2     |HDMI_bd_clk_wiz_0_0 |         1|
+|3     |HDMI_bd_dvi2rgb_0_0 |         1|
+|4     |HDMI_bd_rgb2dvi_0_0 |         1|
++------+--------------------+----------+
 
 Report Cell Usage: 
-+------+------------------------------+------+
-|      |Cell                          |Count |
-+------+------------------------------+------+
-|1     |HDMI_bd_RTL_0_0_bbox_0        |     1|
-|2     |HDMI_bd_clk_wiz_0_0_bbox_1    |     1|
-|3     |HDMI_bd_dvi2rgb_0_0_bbox_2    |     1|
-|4     |HDMI_bd_rgb2dvi_0_0_bbox_3    |     1|
-|5     |HDMI_bd_xlconstant_0_0_bbox_4 |     1|
-|6     |IBUF                          |     1|
-|7     |IOBUF                         |     2|
-|8     |OBUF                          |     4|
-+------+------------------------------+------+
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |HDMI_bd_RTL_0_0_bbox_0     |     1|
+|2     |HDMI_bd_clk_wiz_0_0_bbox_1 |     1|
+|3     |HDMI_bd_dvi2rgb_0_0_bbox_2 |     1|
+|4     |HDMI_bd_rgb2dvi_0_0_bbox_3 |     1|
+|5     |IBUF                       |     1|
+|6     |IOBUF                      |     2|
+|7     |OBUF                       |     4|
++------+---------------------------+------+
 
 Report Instance Areas: 
-+------+------------+--------+------+
-|      |Instance    |Module  |Cells |
-+------+------------+--------+------+
-|1     |top         |        |    54|
-|2     |  HDMI_bd_i |HDMI_bd |    47|
-+------+------------+--------+------+
++------+-----------------+-----------------------+------+
+|      |Instance         |Module                 |Cells |
++------+-----------------+-----------------------+------+
+|1     |top              |                       |    53|
+|2     |  HDMI_bd_i      |HDMI_bd                |    46|
+|3     |    xlconstant_0 |HDMI_bd_xlconstant_0_0 |     0|
++------+-----------------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 783.000 ; gain = 487.531
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 898.383 ; gain = 492.512
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 783.000 ; gain = 191.797
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 783.000 ; gain = 487.531
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 898.383 ; gain = 197.137
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 898.383 ; gain = 492.512
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 913.074 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-39 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+42 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 804.254 ; gain = 517.418
-WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'U:/VLSI/LABO3/numero8/project_1.runs/synth_1/HDMI_bd_wrapper.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 913.074 ; gain = 518.730
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 913.074 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.runs/synth_1/HDMI_bd_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file HDMI_bd_wrapper_utilization_synth.rpt -pb HDMI_bd_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 804.488 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Nov  1 03:26:44 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 29 14:15:27 2021...

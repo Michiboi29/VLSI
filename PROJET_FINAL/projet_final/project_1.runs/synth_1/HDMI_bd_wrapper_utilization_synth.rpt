@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Mon Nov  1 03:26:44 2021
-| Host         : pcetu-126 running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 29 14:15:27 2021
+| Host         : LAPTOP-MIC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file HDMI_bd_wrapper_utilization_synth.rpt -pb HDMI_bd_wrapper_utilization_synth.pb
 | Design       : HDMI_bd_wrapper
 | Device       : 7z020clg400-1
@@ -155,15 +155,14 @@ Table of Contents
 8. Black Boxes
 --------------
 
-+------------------------+------+
-|        Ref Name        | Used |
-+------------------------+------+
-| HDMI_bd_xlconstant_0_0 |    1 |
-| HDMI_bd_rgb2dvi_0_0    |    1 |
-| HDMI_bd_dvi2rgb_0_0    |    1 |
-| HDMI_bd_clk_wiz_0_0    |    1 |
-| HDMI_bd_RTL_0_0        |    1 |
-+------------------------+------+
++---------------------+------+
+|       Ref Name      | Used |
++---------------------+------+
+| HDMI_bd_rgb2dvi_0_0 |    1 |
+| HDMI_bd_dvi2rgb_0_0 |    1 |
+| HDMI_bd_clk_wiz_0_0 |    1 |
+| HDMI_bd_RTL_0_0     |    1 |
++---------------------+------+
 
 
 9. Instantiated Netlists

@@ -1,8 +1,8 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
---Date        : Mon Nov  1 03:25:10 2021
---Host        : pcetu-126 running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+--Date        : Mon Nov 29 14:14:17 2021
+--Host        : LAPTOP-MIC running 64-bit major release  (build 9200)
 --Command     : generate_target HDMI_bd.bd
 --Design      : HDMI_bd
 --Purpose     : IP block netlist
@@ -41,14 +41,6 @@ entity HDMI_bd is
 end HDMI_bd;
 
 architecture STRUCTURE of HDMI_bd is
-  component HDMI_bd_clk_wiz_0_0 is
-  port (
-    reset : in STD_LOGIC;
-    clk_in1 : in STD_LOGIC;
-    clk_out1 : out STD_LOGIC;
-    locked : out STD_LOGIC
-  );
-  end component HDMI_bd_clk_wiz_0_0;
   component HDMI_bd_dvi2rgb_0_0 is
   port (
     TMDS_Clk_p : in STD_LOGIC;
@@ -86,19 +78,30 @@ architecture STRUCTURE of HDMI_bd is
     PixelClk : in STD_LOGIC
   );
   end component HDMI_bd_rgb2dvi_0_0;
-  component HDMI_bd_xlconstant_0_0 is
-  port (
-    dout : out STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component HDMI_bd_xlconstant_0_0;
   component HDMI_bd_RTL_0_0 is
   port (
     data_in : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    HSync : in STD_LOGIC;
+    VSync : in STD_LOGIC;
+    VDE : in STD_LOGIC;
     LED0 : out STD_LOGIC;
     LED1 : out STD_LOGIC;
     LED2 : out STD_LOGIC
   );
   end component HDMI_bd_RTL_0_0;
+  component HDMI_bd_clk_wiz_0_0 is
+  port (
+    reset : in STD_LOGIC;
+    clk_in1 : in STD_LOGIC;
+    clk_out1 : out STD_LOGIC;
+    locked : out STD_LOGIC
+  );
+  end component HDMI_bd_clk_wiz_0_0;
+  component HDMI_bd_xlconstant_0_0 is
+  port (
+    dout : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component HDMI_bd_xlconstant_0_0;
   signal CLK_1 : STD_LOGIC;
   signal RTL_0_LED0 : STD_LOGIC;
   signal RTL_0_LED1 : STD_LOGIC;
@@ -130,7 +133,7 @@ architecture STRUCTURE of HDMI_bd is
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of CLK : signal is "xilinx.com:signal:clock:1.0 CLK.CLK CLK";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of CLK : signal is "XIL_INTERFACENAME CLK.CLK, CLK_DOMAIN HDMI_bd_CLK, FREQ_HZ 125000000, PHASE 0.000";
+  attribute X_INTERFACE_PARAMETER of CLK : signal is "XIL_INTERFACENAME CLK.CLK, CLK_DOMAIN HDMI_bd_CLK, FREQ_HZ 125000000, INSERT_VIP 0, PHASE 0.000";
   attribute X_INTERFACE_INFO of hdmi_in_clk_n : signal is "digilentinc.com:interface:tmds:1.0 hdmi_in CLK_N";
   attribute X_INTERFACE_INFO of hdmi_in_clk_p : signal is "digilentinc.com:interface:tmds:1.0 hdmi_in CLK_P";
   attribute X_INTERFACE_INFO of hdmi_in_ddc_scl_i : signal is "xilinx.com:interface:iic:1.0 hdmi_in_ddc SCL_I";
@@ -142,7 +145,7 @@ architecture STRUCTURE of HDMI_bd is
   attribute X_INTERFACE_INFO of hdmi_out_clk_n : signal is "digilentinc.com:interface:tmds:1.0 hdmi_out CLK_N";
   attribute X_INTERFACE_INFO of hdmi_out_clk_p : signal is "digilentinc.com:interface:tmds:1.0 hdmi_out CLK_P";
   attribute X_INTERFACE_INFO of reset : signal is "xilinx.com:signal:reset:1.0 RST.RESET RST";
-  attribute X_INTERFACE_PARAMETER of reset : signal is "XIL_INTERFACENAME RST.RESET, POLARITY ACTIVE_HIGH";
+  attribute X_INTERFACE_PARAMETER of reset : signal is "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_HIGH";
   attribute X_INTERFACE_INFO of hdmi_in_data_n : signal is "digilentinc.com:interface:tmds:1.0 hdmi_in DATA_N";
   attribute X_INTERFACE_INFO of hdmi_in_data_p : signal is "digilentinc.com:interface:tmds:1.0 hdmi_in DATA_P";
   attribute X_INTERFACE_INFO of hdmi_out_data_n : signal is "digilentinc.com:interface:tmds:1.0 hdmi_out DATA_N";
@@ -170,9 +173,12 @@ begin
   reset_1 <= reset;
 RTL_0: component HDMI_bd_RTL_0_0
      port map (
+      HSync => '0',
       LED0 => RTL_0_LED0,
       LED1 => RTL_0_LED1,
       LED2 => RTL_0_LED2,
+      VDE => '0',
+      VSync => '0',
       data_in(23 downto 0) => dvi2rgb_0_vid_pData(23 downto 0)
     );
 clk_wiz_0: component HDMI_bd_clk_wiz_0_0
