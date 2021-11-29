@@ -1,0 +1,1 @@
+-wto "3646863906cb482fa747727649519ab5" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "UART_transmitter_behav" "xil_defaultlib.UART_transmitter" -log "elaborate.log" 

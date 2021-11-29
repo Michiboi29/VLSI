@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Receveur.srcs/sources_1/new/reg_1bit.vhd" \
+"../../../../Receveur.srcs/sources_1/new/rdc_Nbits.vhd" \
+
+# Do not sort compile order
+nosort

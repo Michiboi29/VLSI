@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Receveur.srcs/sources_1/new/Adder.vhd" \
+"../../../../Receveur.srcs/sources_1/new/Adder_8bits.vhd" \
+"../../../../Receveur.srcs/sources_1/new/cmp_16bits.vhd" \
+"../../../../Receveur.srcs/sources_1/new/compt_sync.vhd" \
+"../../../../Receveur.srcs/sources_1/new/rdc_Nbits.vhd" \
+"../../../../Receveur.srcs/sources_1/new/reg_1bit.vhd" \
+"../../../../Receveur.srcs/sources_1/new/UART_receiver.vhd" \
+
+# Do not sort compile order
+nosort
