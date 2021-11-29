@@ -34,9 +34,9 @@ use IEEE.std_logic_signed.all;
 
 entity RTL is
     Port ( data_in : in STD_LOGIC_VECTOR (23 downto 0);
-           HSync : out std_logic;
-           VSync : out std_logic;
-           VDE : out std_logic;
+           HSync : in std_logic;
+           VSync : in std_logic;
+           VDE : in std_logic;
            LED0 : out STD_LOGIC;
            LED1 : out STD_LOGIC;
            LED2 : out STD_LOGIC);
