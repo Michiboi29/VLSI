@@ -167,6 +167,14 @@
           "VDE_in": {
             "direction": "I"
           },
+          "key": {
+            "direction": "I",
+            "left": "30",
+            "right": "0"
+          },
+          "load": {
+            "direction": "I"
+          },
           "data_out": {
             "direction": "O",
             "left": "23",
@@ -185,6 +193,12 @@
       }
     },
     "interface_nets": {
+      "rgb2dvi_0_TMDS": {
+        "interface_ports": [
+          "hdmi_out",
+          "rgb2dvi_0/TMDS"
+        ]
+      },
       "dvi2rgb_0_RGB": {
         "interface_ports": [
           "dvi2rgb_0/RGB",
@@ -201,12 +215,6 @@
         "interface_ports": [
           "hdmi_in",
           "dvi2rgb_0/TMDS"
-        ]
-      },
-      "rgb2dvi_0_TMDS": {
-        "interface_ports": [
-          "hdmi_out",
-          "rgb2dvi_0/TMDS"
         ]
       }
     },
