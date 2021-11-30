@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="D:/Documents/Vivado/VLSI/PROJET_FINAL/projet_final/project_1.xpr">
+<Project Version="7" Minor="39" Path="C:/GIT/VLSI/PROJET_FINAL/projet_final/project_1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="46568e9c09aa4a0a97719fe9ce7e6a8b"/>
@@ -62,15 +62,13 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/imports/new/cmp_16bits.vhd">
+      <File Path="$PSRCDIR/sources_1/new/regNbits.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../VLSI/LABO2/numero6/numero6.srcs/sources_1/new/cmp_16bits.vhd"/>
-          <Attr Name="ImportTime" Val="1633891859"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/RTL.vhd">
+      <File Path="$PSRCDIR/sources_1/new/Encryption.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -82,17 +80,14 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="HDMI_bd.bd" FileRelPathName="ip/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0.xci">
-          <Proxy FileSetName="HDMI_bd_clk_wiz_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="HDMI_bd.bd" FileRelPathName="ip/HDMI_bd_RTL_0_0/HDMI_bd_RTL_0_0.xci">
-          <Proxy FileSetName="HDMI_bd_RTL_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="HDMI_bd.bd" FileRelPathName="ip/HDMI_bd_rgb2dvi_0_0/HDMI_bd_rgb2dvi_0_0.xci">
           <Proxy FileSetName="HDMI_bd_rgb2dvi_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="HDMI_bd.bd" FileRelPathName="ip/HDMI_bd_dvi2rgb_0_0/HDMI_bd_dvi2rgb_0_0.xci">
           <Proxy FileSetName="HDMI_bd_dvi2rgb_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="HDMI_bd.bd" FileRelPathName="ip/HDMI_bd_clk_wiz_0_0/HDMI_bd_clk_wiz_0_0.xci">
+          <Proxy FileSetName="HDMI_bd_clk_wiz_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/HDMI_bd/hdl/HDMI_bd_wrapper.vhd">
@@ -101,19 +96,26 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/reg.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/new/cmp_16bits.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../VLSI/LABO3/numero4/numero4.srcs/sources_1/new/reg.vhd"/>
-          <Attr Name="ImportTime" Val="1635753027"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../VLSI/LABO2/numero6/numero6.srcs/sources_1/new/cmp_16bits.vhd"/>
+          <Attr Name="ImportTime" Val="1633891859"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/rdc_load_Nbits.vhd">
+      <File Path="$PSRCDIR/sources_1/new/RTL.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../VLSI/LABO3/numero4/numero4.srcs/sources_1/new/rdc_load_Nbits.vhd"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/reg.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../VLSI/LABO3/numero4/numero4.srcs/sources_1/new/reg.vhd"/>
           <Attr Name="ImportTime" Val="1635753027"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -248,12 +250,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="HDMI_bd_RTL_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HDMI_bd_RTL_0_0">
-      <Config>
-        <Option Name="TopModule" Val="HDMI_bd_RTL_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -303,20 +299,7 @@
     </Run>
     <Run Id="HDMI_bd_clk_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="HDMI_bd_clk_wiz_0_0" Part="xc7z020clg400-1" ConstrsSet="HDMI_bd_clk_wiz_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HDMI_bd_clk_wiz_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="HDMI_bd_RTL_0_0_synth_1" Type="Ft3:Synth" SrcSet="HDMI_bd_RTL_0_0" Part="xc7z020clg400-1" ConstrsSet="HDMI_bd_RTL_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HDMI_bd_RTL_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -374,27 +357,7 @@
     </Run>
     <Run Id="HDMI_bd_clk_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="HDMI_bd_clk_wiz_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HDMI_bd_clk_wiz_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="HDMI_bd_RTL_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="HDMI_bd_RTL_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HDMI_bd_RTL_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

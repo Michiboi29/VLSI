@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="HDMI_bd" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1638213259"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1638213259"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1638213259"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1638213259"/>
+    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1638243749"/>
+    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1638243749"/>
+    <Generation Name="SIMULATION" State="RESET" Timestamp="1638243749"/>
+    <Generation Name="HW_HANDOFF" State="RESET" Timestamp="1638243749"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\HDMI_bd_clk_wiz_0_0\HDMI_bd_clk_wiz_0_0.xci" Type="IP">
         <Instance HierarchyPath="clk_wiz_0"/>
@@ -49,14 +49,6 @@
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\HDMI_bd_RTL_0_0\HDMI_bd_RTL_0_0.xci" Type="IP">
-        <Instance HierarchyPath="RTL_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="HDMI_bd_ooc.xdc" Type="XDC">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
@@ -82,6 +74,14 @@
       <File Name="sim\HDMI_bd.protoinst">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\HDMI_bd_Encryption_0_0\HDMI_bd_Encryption_0_0.xci" Type="IP">
+        <Instance HierarchyPath="Encryption_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
     </FileCollection>
