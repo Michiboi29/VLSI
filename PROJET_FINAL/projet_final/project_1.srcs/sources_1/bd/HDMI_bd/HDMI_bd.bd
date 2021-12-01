@@ -193,6 +193,12 @@
       }
     },
     "interface_nets": {
+      "hdmi_in_1": {
+        "interface_ports": [
+          "hdmi_in",
+          "dvi2rgb_0/TMDS"
+        ]
+      },
       "rgb2dvi_0_TMDS": {
         "interface_ports": [
           "hdmi_out",
@@ -209,12 +215,6 @@
         "interface_ports": [
           "hdmi_in_ddc",
           "dvi2rgb_0/DDC"
-        ]
-      },
-      "hdmi_in_1": {
-        "interface_ports": [
-          "hdmi_in",
-          "dvi2rgb_0/TMDS"
         ]
       }
     },
