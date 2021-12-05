@@ -1,0 +1,374 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD80C17E30BB243A9",
+      "device": "xc7z020clg400-1",
+      "name": "HDMI_bd",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "dvi2rgb_0": "",
+      "rgb2dvi_0": "",
+      "clk_wiz_0": "",
+      "xlconstant_0": "",
+      "mux30_7_0": "",
+      "Generator_0": ""
+    },
+    "interface_ports": {
+      "hdmi_in": {
+        "mode": "Slave",
+        "vlnv": "digilentinc.com:interface:tmds_rtl:1.0"
+      },
+      "hdmi_in_ddc": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:iic_rtl:1.0"
+      },
+      "hdmi_out": {
+        "mode": "Master",
+        "vlnv": "digilentinc.com:interface:tmds_rtl:1.0"
+      }
+    },
+    "ports": {
+      "CLK": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "HDMI_bd_CLK",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "hdmi_in_hpd": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "Start_gen": {
+        "direction": "I"
+      },
+      "CTRL": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "LEDs": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "Ready_out": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "dvi2rgb_0": {
+        "vlnv": "digilentinc.com:ip:dvi2rgb:1.8",
+        "xci_name": "HDMI_bd_dvi2rgb_0_0"
+      },
+      "rgb2dvi_0": {
+        "vlnv": "digilentinc.com:ip:rgb2dvi:1.4",
+        "xci_name": "HDMI_bd_rgb2dvi_0_0",
+        "parameters": {
+          "kClkPrimitive": {
+            "value": "MMCM"
+          },
+          "kClkRange": {
+            "value": "3"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "HDMI_bd_clk_wiz_0_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "80.0"
+          },
+          "CLKOUT1_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "109.241"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "96.948"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "200.000"
+          },
+          "CLKOUT2_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT3_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT4_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT5_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT6_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT7_DRIVES": {
+            "value": "BUFG"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "8"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "8.000"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "5"
+          },
+          "MMCM_COMPENSATION": {
+            "value": "ZHOLD"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
+          },
+          "PRIMITIVE": {
+            "value": "PLL"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "125.000"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "HDMI_bd_xlconstant_0_0"
+      },
+      "mux30_7_0": {
+        "vlnv": "xilinx.com:module_ref:mux30_7:1.0",
+        "xci_name": "HDMI_bd_mux30_7_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux30_7",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CTRL": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "Data_in": {
+            "direction": "I",
+            "left": "30",
+            "right": "0"
+          },
+          "Data_out": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        }
+      },
+      "Generator_0": {
+        "vlnv": "xilinx.com:module_ref:Generator:1.0",
+        "xci_name": "HDMI_bd_Generator_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Generator",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "PixelClk": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "HDMI_bd_dvi2rgb_0_0_PixelClk",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "Start": {
+            "direction": "I"
+          },
+          "RGB_in": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "KeyReady": {
+            "direction": "O"
+          },
+          "Key_out": {
+            "direction": "O",
+            "left": "30",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "dvi2rgb_0_RGB": {
+        "interface_ports": [
+          "dvi2rgb_0/RGB",
+          "rgb2dvi_0/RGB"
+        ]
+      },
+      "hdmi_in_1": {
+        "interface_ports": [
+          "hdmi_in",
+          "dvi2rgb_0/TMDS"
+        ]
+      },
+      "dvi2rgb_0_DDC": {
+        "interface_ports": [
+          "hdmi_in_ddc",
+          "dvi2rgb_0/DDC"
+        ]
+      },
+      "rgb2dvi_0_TMDS": {
+        "interface_ports": [
+          "hdmi_out",
+          "rgb2dvi_0/TMDS"
+        ]
+      }
+    },
+    "nets": {
+      "CLK_1": {
+        "ports": [
+          "CLK",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "dvi2rgb_0/aRst",
+          "dvi2rgb_0/pRst",
+          "rgb2dvi_0/aRst",
+          "clk_wiz_0/reset",
+          "Generator_0/Reset"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "dvi2rgb_0/RefClk"
+        ]
+      },
+      "dvi2rgb_0_PixelClk": {
+        "ports": [
+          "dvi2rgb_0/PixelClk",
+          "rgb2dvi_0/PixelClk",
+          "Generator_0/PixelClk"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "hdmi_in_hpd"
+        ]
+      },
+      "dvi2rgb_0_vid_pData": {
+        "ports": [
+          "dvi2rgb_0/vid_pData",
+          "rgb2dvi_0/vid_pData",
+          "Generator_0/RGB_in"
+        ]
+      },
+      "dvi2rgb_0_vid_pHSync": {
+        "ports": [
+          "dvi2rgb_0/vid_pHSync",
+          "rgb2dvi_0/vid_pHSync"
+        ]
+      },
+      "dvi2rgb_0_vid_pVSync": {
+        "ports": [
+          "dvi2rgb_0/vid_pVSync",
+          "rgb2dvi_0/vid_pVSync"
+        ]
+      },
+      "dvi2rgb_0_vid_pVDE": {
+        "ports": [
+          "dvi2rgb_0/vid_pVDE",
+          "rgb2dvi_0/vid_pVDE"
+        ]
+      },
+      "Generator_0_Key_out": {
+        "ports": [
+          "Generator_0/Key_out",
+          "mux30_7_0/Data_in"
+        ]
+      },
+      "CTRL_1": {
+        "ports": [
+          "CTRL",
+          "mux30_7_0/CTRL"
+        ]
+      },
+      "Start_gen_1": {
+        "ports": [
+          "Start_gen",
+          "Generator_0/Start"
+        ]
+      },
+      "mux30_7_0_Data_out": {
+        "ports": [
+          "mux30_7_0/Data_out",
+          "LEDs"
+        ]
+      },
+      "Generator_0_KeyReady": {
+        "ports": [
+          "Generator_0/KeyReady",
+          "Ready_out"
+        ]
+      }
+    }
+  }
+}
