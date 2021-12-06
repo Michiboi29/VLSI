@@ -89,7 +89,7 @@ begin
 reg1 : regNbit generic map (N => 24) port map (CLK => PixelClk, RESET => reset, ENABLE => '1', D => data_in, Q => reg1out);
 reg2 : regNbit generic map (N => 24) port map (CLK => PixelClk, RESET => reset, ENABLE => '1', D => reg2in, Q => data_out);
 --keyreg : rdc_key generic map (N => 31, M => 24) port map(RESET => reset, ENABLE => '1', CLK => PixelClk, MODE => load, LOAD => key, INPUT => rdc_in, OUTPUT => rdc_out, OUTREG => key_24);
-keyreg : rdc_NxM port map(RESET => reset, ENABLE => '1', CLK => PixelClk, INPUT => key_int(23 downto 0), OUTPUT => key_24);
+keyreg : rdc_NxM generic map (N => 3, M => 24) port map(RESET => reset, ENABLE => '1', CLK => PixelClk, INPUT => key_int(23 downto 0), OUTPUT => key_24);
 Hrdc : rdc_Nbits generic map (N => 3) port map (RESET => reset, ENABLE => '1', CLK => PixelClk, INPUT => HSync_in, OUTPUT => hrdc_o);
 Vrdc : rdc_Nbits generic map (N => 3) port map (RESET => reset, ENABLE => '1', CLK => PixelClk, INPUT => VSync_in, OUTPUT => vrdc_o);
 VDErdc : rdc_Nbits generic map (N => 3) port map (RESET => reset, ENABLE => '1', CLK => PixelClk, INPUT => VDE_in, OUTPUT => vderdc_o);
@@ -97,7 +97,6 @@ VDErdc : rdc_Nbits generic map (N => 3) port map (RESET => reset, ENABLE => '1',
 HSync_out <= hrdc_o(2);
 VSync_out <= vrdc_o(2);
 VDE_out <= vderdc_o(2);
---key_24 <= key_int(23 downto 0);
 
 process(reset, PixelClk, load)
 begin
