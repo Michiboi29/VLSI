@@ -1,0 +1,127 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Dec  6 17:58:06 2021
+# Process ID: 14144
+# Current directory: C:/GIT/VLSI/Projet_test/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11660 C:\GIT\VLSI\Projet_test\project_1\project_1.xpr
+# Log file: C:/GIT/VLSI/Projet_test/project_1/vivado.log
+# Journal file: C:/GIT/VLSI/Projet_test/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/GIT/VLSI/Projet_test/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GIT/VLSI/Projet_test/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 799.926 ; gain = 193.426
+update_compile_order -fileset sources_1
+open_bd_design {C:/GIT/VLSI/Projet_test/project_1/project_1.srcs/sources_1/bd/HDMI_bd/HDMI_bd.bd}
+Adding cell -- digilentinc.com:ip:dvi2rgb:1.8 - dvi2rgb_0
+Adding cell -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:module_ref:Encryption:1.0 - Encryption_0
+Adding cell -- xilinx.com:module_ref:Decryption:1.0 - Decryption_0
+Adding cell -- xilinx.com:module_ref:Generator:1.0 - Generator_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset(rst) and /dvi2rgb_0/aRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset(rst) and /dvi2rgb_0/pRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /dvi2rgb_0/PixelClk(clk) and /Encryption_0/PixelClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /dvi2rgb_0/PixelClk(clk) and /Decryption_0/PixelClk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /dvi2rgb_0/PixelClk(clk) and /Generator_0/PixelClk(undef)
+Successfully read diagram <HDMI_bd> from BD file <C:/GIT/VLSI/Projet_test/project_1/project_1.srcs/sources_1/bd/HDMI_bd/HDMI_bd.bd>
+open_bd_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1769.062 ; gain = 27.414
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351A787AFA
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1908.391 ; gain = 139.328
+set_property PROGRAM.FILE {C:/GIT/VLSI/Projet_test/project_1/project_1.runs/impl_1/HDMI_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/GIT/VLSI/Projet_test/project_1/project_1.runs/impl_1/HDMI_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/GIT/VLSI/Projet_test/project_1/project_1.runs/impl_1/HDMI_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {C:/GIT/VLSI/Projet_test/project_1/project_1.srcs/sources_1/bd/HDMI_bd/HDMI_bd.bd}
+open_bd_design {C:/GIT/VLSI/Projet_test/project_1/project_1.srcs/sources_1/bd/HDMI_bd/HDMI_bd.bd}
+update_module_reference HDMI_bd_Generator_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'Reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GIT/VLSI/Projet_test/repo'.
+Upgrading 'C:/GIT/VLSI/Projet_test/project_1/project_1.srcs/sources_1/bd/HDMI_bd/HDMI_bd.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/GIT/VLSI/Projet_test/project_1/project_1.runs/HDMI_bd_Generator_0_0_synth_1
+
+INFO: [IP_Flow 19-1972] Upgraded HDMI_bd_Generator_0_0 from Generator_v1_0 1.0 to Generator_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /dvi2rgb_0/PixelClk(clk) and /Generator_0_upgraded_ipi/PixelClk(undef)
+Wrote  : <C:\GIT\VLSI\Projet_test\project_1\project_1.srcs\sources_1\bd\HDMI_bd\HDMI_bd.bd> 
+Wrote  : <C:/GIT/VLSI/Projet_test/project_1/project_1.srcs/sources_1/bd/HDMI_bd/ui/bd_a3426369.ui> 
+update_module_reference: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1946.363 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/GIT/VLSI/Projet_test/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [BD 41-927] Following properties on pin /dvi2rgb_0/RefClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /dvi2rgb_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=HDMI_bd_dvi2rgb_0_0_PixelClk 
+WARNING: [BD 41-927] Following properties on pin /rgb2dvi_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=HDMI_bd_dvi2rgb_0_0_PixelClk 
+WARNING: [BD 41-927] Following properties on pin /Encryption_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /Decryption_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /Generator_0/Reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+Wrote  : <C:\GIT\VLSI\Projet_test\project_1\project_1.srcs\sources_1\bd\HDMI_bd\HDMI_bd.bd> 
+VHDL Output written to : C:/GIT/VLSI/Projet_test/project_1/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.vhd
+VHDL Output written to : C:/GIT/VLSI/Projet_test/project_1/project_1.srcs/sources_1/bd/HDMI_bd/sim/HDMI_bd.vhd
+VHDL Output written to : C:/GIT/VLSI/Projet_test/project_1/project_1.srcs/sources_1/bd/HDMI_bd/hdl/HDMI_bd_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Generator_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Decryption_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Encryption_0 .
+Exporting to file C:/GIT/VLSI/Projet_test/project_1/project_1.srcs/sources_1/bd/HDMI_bd/hw_handoff/HDMI_bd.hwh
+Generated Block Design Tcl file C:/GIT/VLSI/Projet_test/project_1/project_1.srcs/sources_1/bd/HDMI_bd/hw_handoff/HDMI_bd_bd.tcl
+Generated Hardware Definition File C:/GIT/VLSI/Projet_test/project_1/project_1.srcs/sources_1/bd/HDMI_bd/synth/HDMI_bd.hwdef
+[Mon Dec  6 18:15:14 2021] Launched HDMI_bd_Generator_0_0_synth_1, synth_1...
+Run output will be captured here:
+HDMI_bd_Generator_0_0_synth_1: C:/GIT/VLSI/Projet_test/project_1/project_1.runs/HDMI_bd_Generator_0_0_synth_1/runme.log
+synth_1: C:/GIT/VLSI/Projet_test/project_1/project_1.runs/synth_1/runme.log
+[Mon Dec  6 18:15:14 2021] Launched impl_1...
+Run output will be captured here: C:/GIT/VLSI/Projet_test/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2052.273 ; gain = 102.695
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/GIT/VLSI/Projet_test/project_1/project_1.runs/synth_1
+
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351A787AFA
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  6 18:16:24 2021...
